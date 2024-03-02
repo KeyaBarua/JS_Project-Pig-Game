@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top left, #7f0099, #dc4e52);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+main {
+  width: 65rem;
+  height: 40rem;
+  background-color: rgba(255, 255, 255, 0.307);
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 2rem;
+  filter: blur();
+  overflow: hidden;
+  position: relative;
+}
+
+.players {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  padding: 6rem 10rem;
+}
+
+.name {
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+  position: absolute;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  left: 50%;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(10px);
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.reset {
+  top: 4rem;
+}
+
+.roll {
+  top: 25rem;
+}
+
+.hold {
+  top: 30rem;
+}
+
+.current-score-box {
+  background-color: #d31e6a;
+  font-family: inherit;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 3rem 1rem 3rem;
+  border-radius: 10px;
+  /* position: absolute; */
+  top: 25rem;
+}
+
+.title {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.current-score {
+  font-size: 2rem;
+}
+
+.total {
+  color: #ab0c4e;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 9rem;
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.492);
+}
+
+.player-active .name {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-active .total-score {
+  font-weight: 500;
+}
+
+.dice {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player-winner {
+  background-color: rgba(0, 0, 0, 0.858);
+}
+
+.player-winner .name {
+  font-weight: 700;
+  color: #ab0c4e;
+}
