@@ -43,7 +43,7 @@ const rollDice = function () {
     randomNumber = Math.trunc(Math.random() * 6) + 1;
     // Displaying the dice
     dice.classList.remove("hidden");
-    dice.src = `dice-img/dice-${randomNumber}.png`;
+    dice.src = `dice-${randomNumber}.png`;
     if (randomNumber !== 1) {
         addScore += randomNumber;
         document.getElementById(`current--score${activePlayer}`).textContent = addScore;
